@@ -1,0 +1,11 @@
+<h1>Users</h1>
+<% users.forEach((user) => { %>
+<%= user.username %></br>
+<% }); %>
+
+<h2>Ajout</h2>
+<form action="/user" method="post">
+  <input placeholder="Username" name="username" />
+  <input placeholder="Email" name="email" />
+  <input type="submit" />
+</form>
